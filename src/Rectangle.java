@@ -45,6 +45,10 @@ public double getHeight(){
         return height;
 }
 
+public double getPerimeter(){
+        return perimeter;
+}
+
 
     //mutators
 
@@ -53,12 +57,24 @@ public double getHeight(){
      * @param newWidth the width to set the rect
      */
     public void setWidth(double newWidth){
+
         width  = newWidth;
     }
 
+    public void setHeight(double newHeight){
+        height = newHeight;
+    }
+
+
 
     //other methods
-
+public double calcArea(){
+        return height*width;
+}
+public double calcPeri(){
+        perimeter = (height * 2 ) + (width * 2));
+        return perimeter;
+}
 
     //toString method
 
